@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NRD Performance – NRD Dash PRO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #060810;
+  --panel: #0e1328;
+  --accent: #4da6ff;
+  --text: #eef2f8;
+  --muted: #9aa4b2;
+  --radius: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b1030, var(--bg));
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(60px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade {
+  animation: fadeUp 1.8s ease forwards;
+}
+
+/* Global */
+section {
+  padding: 90px 10%;
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+/* BIG LOGO HEADER */
+.logo-header {
+  text-align: center;
+  padding: 90px 10% 50px;
+}
+
+.logo-header img {
+  width: 340px;
+  max-width: 90%;
+  animation: fadeUp 2.2s ease forwards;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.4rem;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  color: var(--accent);
+}
+
+.hero img {
+  margin-top: 60px;
+  width: 100%;
+  max-width: 760px;
+  border-radius: var(--radius);
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  margin-top: 50px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: var(--radius);
+  transition: transform 1.2s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.feature {
+  background: linear-gradient(180deg, #111742, var(--panel));
+  padding: 35px;
+  border-radius: var(--radius);
+}
+
+/* Installation */
+.installation {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.installation img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+@media (max-width: 900px) {
+  .installation {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Checkout */
+.checkout {
+  text-align: center;
+}
+
+.checkout-box {
+  background: linear-gradient(180deg, #0f1538, #0a0e1f);
+  padding: 60px;
+  border-radius: var(--radius);
+  display: inline-block;
+}
+
+.price {
+  font-size: 2.6rem;
+  color: var(--accent);
+  margin: 20px 0;
+}
+
+.checkout-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 18px 50px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), #7cc4ff);
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.6s ease;
+}
+
+.checkout-btn:hover {
+  transform: scale(1.06);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<!-- BIG LOGO -->
+<div class="logo-header">
+  <img src="logo.png" alt="NRD Performance Logo">
+</div>
+
+<section class="hero fade">
+  <h1>NRD <span>Dash PRO</span></h1>
+  <p>
+    A premium smart dash cam system built for performance-focused drivers.
+    Seamlessly combining recording, connectivity, and control.
+  </p>
+  <img src="front.jpg" alt="NRD Dash PRO Front View">
+</section>
+
+<section class="fade">
+  <h2 style="text-align:center;">Full Coverage Recording</h2>
+  <div class="gallery">
+    <img src="front.jpg" alt="4K Front Camera">
+    <img src="rear.jpg" alt="1080p Rear Camera">
+  </div>
+</section>
+
+<section class="fade">
+  <h2 style="text-align:center;">Key Features</h2>
+  <div class="features">
+    <div class="feature">10-inch High-Resolution Touch Display</div>
+    <div class="feature">4K Front Camera with Built-In Screen</div>
+    <div class="feature">1080p Compact Rear Camera</div>
+    <div class="feature">Apple CarPlay & Android Auto Support</div>
+    <div class="feature">Built-in GPS & Voice Assistant</div>
+    <div class="feature">Universal Fit via USB or AUX</div>
+    <div class="feature">Includes Two Mounting Options</div>
+  </div>
+</section>
+
+<section class="installation fade">
+  <img src="installation.jpg" alt="NRD Dash PRO Installation">
+  <div>
+    <h2>Easy Installation</h2>
+    <p>
+      Designed for universal compatibility. Mount the display, connect via USB or AUX,
+      attach the rear camera, and you’re ready to drive. No complex wiring required.
+    </p>
+  </div>
+</section>
+
+<section class="checkout fade">
+  <div class="checkout-box">
+    <h3>NRD Dash PRO</h3>
+    <p>Complete premium dash cam system</p>
+    <div class="price">Secure PayPal Checkout</div>
+    <a
+      class="checkout-btn"
+      href="https://www.paypal.com/ncp/payment/CZJUZLL8ZYXHN"
+      target="_blank">
+      Buy Now
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 NRD Performance. All rights reserved.
+</footer>
+
+</body>
+</html>
